@@ -1,11 +1,7 @@
 # Install Bioconductor
-source("https://bioconductor.org/biocLite.R")
-biocLite()
+install.packages("BiocManager")
 
-library(BiocInstaller)
-biocLite("WGCNA")
-biocLite("Seurat")
-biocLite("scater")
-biocLite("scran")
-biocLite("SC3")
-biocLite("destiny")
+BiocManager::install()
+
+BiocManager::install(c("WGCNA", "Seurat", "scater", "scran", "SC3", "destiny", "DESeq2"))
+
